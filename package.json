@@ -1,0 +1,45 @@
+{
+  "name": "plataforma-importacao-ligeiros",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Plataforma de controlo de importação e legalização de veículos UE → PT",
+  "scripts": {
+    "dev": "turbo run dev",
+    "dev:web": "pnpm --filter @importacao/web dev",
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "type-check": "turbo run type-check",
+    "clean": "turbo run clean && rm -rf node_modules",
+    "format": "prettier --write \"**/*.{ts,tsx,md,json}\"",
+    "supabase:start": "cd supabase && supabase start",
+    "supabase:stop": "cd supabase && supabase stop",
+    "supabase:status": "cd supabase && supabase status",
+    "supabase:reset": "cd supabase && supabase db reset",
+    "supabase:studio": "cd supabase && supabase studio",
+    "setup": "pnpm install && pnpm supabase:start",
+    "postinstall": "echo '✅ Dependências instaladas! Execute: pnpm supabase:start'"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.27.1",
+    "@turbo/gen": "^1.12.4",
+    "prettier": "^3.2.5",
+    "turbo": "^1.12.4",
+    "typescript": "^5.3.3"
+  },
+  "packageManager": "pnpm@8.15.4",
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "keywords": [
+    "importacao",
+    "veiculos",
+    "isv",
+    "portugal",
+    "supabase",
+    "nextjs"
+  ],
+  "author": "TRAe Projects",
+  "license": "UNLICENSED"
+}

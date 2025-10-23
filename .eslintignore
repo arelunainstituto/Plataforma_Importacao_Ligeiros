@@ -1,0 +1,42 @@
+# Documentação
+*.md
+
+# Configurações
+*.json
+!package.json
+!tsconfig*.json
+
+# Build outputs
+.next/
+out/
+dist/
+build/
+
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Supabase
+supabase/
+
+# Scripts
+scripts/
+
+# Environment
+.env*
+
+# Screenshots
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+
+
+
