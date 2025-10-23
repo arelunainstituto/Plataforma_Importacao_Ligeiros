@@ -1,6 +1,6 @@
 {
   "name": "plataforma-importacao-ligeiros",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
   "description": "Plataforma de controlo de importação e legalização de veículos UE → PT",
   "scripts": {
